@@ -2,7 +2,7 @@ import db from "../../connection.js";
 
 const response = await db.query(`
     CREATE TABLE towers (
-        TowerID INT PRIMARY KEY,
+        TowerID INT,
         RingID INT,
         RingType TEXT,
         Place TEXT,

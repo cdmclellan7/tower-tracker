@@ -7,7 +7,9 @@
     "start": "node ./bin/www.js",
     "dev": "nodemon -r dotenv/config ./bin/www.js",
     "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js",
-    "db:create-towers-table": "node -r dotenv/config ./db/scripts/towers/createTable.js"
+    "db:drop-towers-table": "node -r dotenv/config ./db/scripts/towers/dropTable.js",
+    "db:create-towers-table": "node -r dotenv/config ./db/scripts/towers/createTable.js",
+    "db:populate-towers-table": "node -r dotenv/config ./db/scripts/towers/populateTable.js"
   },
   "dependencies": {
     "cookie-parser": "~1.4.4",
